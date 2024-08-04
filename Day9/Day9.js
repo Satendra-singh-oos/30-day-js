@@ -81,18 +81,19 @@ task7Img.src =
 
 const task8 = document.querySelector(".task8");
 
-task8.style.backgroundColor = "#ffa500";
-task8.style.color = "#3cb371";
+task8.classList.add("highlight");
 
 function task8Remove() {
-  task8.style.backgroundColor = "#3c3c3c";
+  task8.classList.remove("highlight");
 }
 
 function task9() {
-  const task9 = document.querySelector(".task9");
-
-  task9.textContent = "Hello World !";
+  const task9Paragraph = document.querySelector(".task9");
+  task9Paragraph.textContent = "Hello World!";
 }
+
+const changeTextButton = document.querySelector(".taks9Btn");
+changeTextButton.addEventListener("click", task9);
 
 const task10 = document.querySelector(".task10");
 
